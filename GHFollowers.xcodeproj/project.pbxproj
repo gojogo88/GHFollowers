@@ -15,6 +15,12 @@
 		6C65064E23B8613500A3712C /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C65064D23B8613500A3712C /* FavoritesListVC.swift */; };
 		6C65065023B8647700A3712C /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C65064F23B8647700A3712C /* GFButton.swift */; };
 		6C65065223B866F800A3712C /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C65065123B866F800A3712C /* GFTextField.swift */; };
+		6C89C6F823BC29A500D438BE /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C89C6F723BC29A500D438BE /* FollowerListVC.swift */; };
+		6C89C6FA23BC2D3E00D438BE /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C89C6F923BC2D3E00D438BE /* String+Ext.swift */; };
+		6C89C6FC23BC34B500D438BE /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C89C6FB23BC34B500D438BE /* GFTitleLabel.swift */; };
+		6C89C6FE23BC35DB00D438BE /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C89C6FD23BC35DB00D438BE /* GFBodyLabel.swift */; };
+		6C89C70023BC369200D438BE /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C89C6FF23BC369200D438BE /* GFAlertVC.swift */; };
+		6C89C70223BC3D3A00D438BE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C89C70123BC3D3A00D438BE /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		6C65064D23B8613500A3712C /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		6C65064F23B8647700A3712C /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		6C65065123B866F800A3712C /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		6C89C6F723BC29A500D438BE /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		6C89C6F923BC2D3E00D438BE /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		6C89C6FB23BC34B500D438BE /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		6C89C6FD23BC35DB00D438BE /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
+		6C89C6FF23BC369200D438BE /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
+		6C89C70123BC3D3A00D438BE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +72,10 @@
 		6C65063623B85BF500A3712C /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				6C65063723B85BF500A3712C /* AppDelegate.swift */,
-				6C65063923B85BF500A3712C /* SceneDelegate.swift */,
 				6C65065323B86C3800A3712C /* Controllers */,
-				6C65065423B86C4D00A3712C /* Resource */,
-				6C65064023B85BF700A3712C /* Assets.xcassets */,
-				6C65064223B85BF700A3712C /* LaunchScreen.storyboard */,
-				6C65064523B85BF700A3712C /* Info.plist */,
+				6C89C70323BC45CA00D438BE /* Custom VIews */,
+				6C89C70423BC45FD00D438BE /* Extension */,
+				6C89C70523BC464800D438BE /* Support */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -76,17 +85,42 @@
 			children = (
 				6C65064B23B8610200A3712C /* SearchVC.swift */,
 				6C65064D23B8613500A3712C /* FavoritesListVC.swift */,
+				6C89C6F723BC29A500D438BE /* FollowerListVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		6C65065423B86C4D00A3712C /* Resource */ = {
+		6C89C70323BC45CA00D438BE /* Custom VIews */ = {
 			isa = PBXGroup;
 			children = (
+				6C89C6FF23BC369200D438BE /* GFAlertVC.swift */,
 				6C65064F23B8647700A3712C /* GFButton.swift */,
 				6C65065123B866F800A3712C /* GFTextField.swift */,
+				6C89C6FB23BC34B500D438BE /* GFTitleLabel.swift */,
+				6C89C6FD23BC35DB00D438BE /* GFBodyLabel.swift */,
 			);
-			path = Resource;
+			path = "Custom VIews";
+			sourceTree = "<group>";
+		};
+		6C89C70423BC45FD00D438BE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6C89C6F923BC2D3E00D438BE /* String+Ext.swift */,
+				6C89C70123BC3D3A00D438BE /* UIViewController+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6C89C70523BC464800D438BE /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6C65063723B85BF500A3712C /* AppDelegate.swift */,
+				6C65063923B85BF500A3712C /* SceneDelegate.swift */,
+				6C65064023B85BF700A3712C /* Assets.xcassets */,
+				6C65064223B85BF700A3712C /* LaunchScreen.storyboard */,
+				6C65064523B85BF700A3712C /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,10 +195,16 @@
 			files = (
 				6C65064C23B8610200A3712C /* SearchVC.swift in Sources */,
 				6C65065023B8647700A3712C /* GFButton.swift in Sources */,
+				6C89C70223BC3D3A00D438BE /* UIViewController+Ext.swift in Sources */,
 				6C65064E23B8613500A3712C /* FavoritesListVC.swift in Sources */,
 				6C65063823B85BF500A3712C /* AppDelegate.swift in Sources */,
+				6C89C6F823BC29A500D438BE /* FollowerListVC.swift in Sources */,
+				6C89C70023BC369200D438BE /* GFAlertVC.swift in Sources */,
 				6C65063A23B85BF500A3712C /* SceneDelegate.swift in Sources */,
+				6C89C6FA23BC2D3E00D438BE /* String+Ext.swift in Sources */,
+				6C89C6FC23BC34B500D438BE /* GFTitleLabel.swift in Sources */,
 				6C65065223B866F800A3712C /* GFTextField.swift in Sources */,
+				6C89C6FE23BC35DB00D438BE /* GFBodyLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

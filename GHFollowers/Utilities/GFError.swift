@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  GHFollowers
 //
-//  Created by Jonathan Go on 1/5/20.
+//  Created by Jonathan Go on 1/14/20.
 //  Copyright © 2020 SonnerStudio. All rights reserved.
 //
 

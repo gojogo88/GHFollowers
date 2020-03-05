@@ -9,10 +9,10 @@
 import UIKit
 
 class FollowerCell: UICollectionViewCell {
-  static let reuseID = "FollowerCell"
+  static let reuseID  = "FollowerCell"
   
   let avatarImageView = GFAvatarImageView(frame: .zero)
-  let usernameLabel = GFTitleLabel(textAlignment: .center, fontSize: 16)
+  let usernameLabel   = GFTitleLabel(textAlignment: .center, fontSize: 16)
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -21,16 +21,19 @@ class FollowerCell: UICollectionViewCell {
   }
   
   
+  override func prepareForReuse() {
+    usernameLabel.text = nil
+  }
+  
+  
   func set(follower: Follower) {
     usernameLabel.text = follower.login
-    avatarImageView.downloadImage(from: follower.avatarUrl)
+    avatarImageView.downloadImage(fromURL: follower.avatarUrl)
   }
   
   
   func configure() {
-    addSubview(avatarImageView)
-    addSubview(usernameLabel)
-    
+    addSubviews(avatarImageView, usernameLabel)
     let padding: CGFloat = 8
     
     NSLayoutConstraint.activate([

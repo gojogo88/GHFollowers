@@ -23,6 +23,8 @@ extension String {
     return passwordPredicate.evaluate(with: self)
   }
   
+  /*
+  same as datDecodingStrategy .iso8601
   func convertToDate() -> Date? {
     let dateFormatter         = DateFormatter()
     dateFormatter.dateFormat  = "yyyy-MM-dd'T'HH:mm:ssZ"
@@ -32,8 +34,10 @@ extension String {
     return dateFormatter.date(from: self)
   }
   
+  
   func convertToDateDisplayFormat() -> String {
     guard let date = self.convertToDate() else { return "N/A" }
     return date.convertToMonthYearFormat()
   }
+   */
 }
